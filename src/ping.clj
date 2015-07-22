@@ -13,7 +13,7 @@
                     str/upper-case)))
 
 (defn ping-server
-  "Launches and returns a Jetty server for the ping handler.  Save the result and invoke .shutdown to stop it."
+  "Launches and returns a Jetty server for the ping handler.  Save the result and invoke .stop to stop it."
   []
   (jetty/run-jetty
     (-> ping-handler
