@@ -5,4 +5,5 @@
                  [io.aviso/pretty "0.1.18"]
                  [ring "1.4.0"]
                  [compojure "1.4.0"]
+                 [com.stuartsierra/component "0.2.3"]
                  [hiccup "1.0.5"]])
