@@ -12,13 +12,15 @@
 
 (defn page-not-found
   [request]
-  (html
-    [:html
-     [:head
-      [:title "Page not found"]]
-     [:body
-      [:h1 "Page not found"
+  (-> [:html
+       [:head
+        [:title "Page not found"]]
+       [:body
+        [:h1 "Page not found"
 
-       [:p "The page you requested "
-        [:b (:uri request)]
-        " does not exist."]]]]))
+         [:p "The page you requested "
+          [:b (:uri request)]
+          " does not exist."]]]]
+      html
+      res/response
+      (res/status 404)))
