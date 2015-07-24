@@ -18,7 +18,7 @@
                                       {:port port :join? false})))
 
   (stop [component]
-    (.stop component)
+    (.stop server)
     component))
 
 (defn new-web-server
